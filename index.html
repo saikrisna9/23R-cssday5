@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .main{
+            border:5px solid black;
+            height:800px;
+            width:800px;
+            position:absolute;
+            left:500px;
+        }
+        .a>:nth-of-type(2n){
+            background-color: black;
+            height:100px;
+            width:100px;
+        }
+        .a>:nth-of-type(2n+1){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .b{
+            position: relative;
+            left:100px;
+            bottom: 800px;
+        }
+        .b>:nth-of-type(2n){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .b>:nth-of-type(2n+1){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .c{
+            position: relative;
+            left:200px;
+            bottom: 1600px;
+        }
+        .c>:nth-of-type(2n){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .c>:nth-of-type(2n+1){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .d{
+            position: relative;
+            left:300px;
+            bottom: 2400px;
+        }
+        .d>:nth-of-type(2n){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .d>:nth-of-type(2n+1){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .e{
+            position: relative;
+            left:400px;
+            bottom: 3200px;
+        }
+        .e>:nth-of-type(2n){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .e>:nth-of-type(2n+1){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .f{
+            position: relative;
+            left:500px;
+            bottom:4000px;
+        }
+        .f>:nth-of-type(2n){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .f>:nth-of-type(2n+1){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .g{
+            position: relative;
+            left:600px;
+            bottom: 4800px;
+        }
+        .g>:nth-of-type(2n){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .g>:nth-of-type(2n+1){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .h{
+            position: relative;
+            left:700px;
+            bottom:5600px;
+        }
+        .h>:nth-of-type(2n){
+            background-color:white;
+            height:100px;
+            width:100px;
+        }
+        .h>:nth-of-type(2n+1){
+            background-color:black;
+            height:100px;
+            width:100px;
+        }
+        .main{
+            font-size: 80px;
+        }
+        .a2,.c2,.e2,.g2,.h1,.b1,.f1,.d1,.b7,.d7,.f7,.h7,.a8,.c8,.e8,.g8{
+            color: white;
+        }
+      .a2:active,.c2:active,.e2:active,.g2:active{
+        background-color: aquamarine;
+      }
+      .b2:hover,.d2:hover,.f2:hover,.h2:hover{
+        font-size: 90px;
+        background-color:lawngreen;
+      }
+      .a1:hover,.b1:hover,.c1:hover,.d1:hover,.e1:hover,.f1:hover,.g1:hover,.h1:hover{
+        font-size:90px;
+        background-color: deeppink;
+
+      }
+      .a7:hover,.b7:hover,.c7:hover{
+        background-color:peru;
+      }
+      .d7:active,.e7:active,.f7:active{
+        background-color: fuchsia;
+      }
+     .g7:hover{
+            background-color: aquamarine;
+        }
+        .h7:hover{
+            background-color:blue;
+        }
+        .a8:hover{
+            background-color: blueviolet;
+        }
+        .b8:hover{
+            font-size:90px;
+            background-color: cyan;
+        }
+        .c8:hover{
+            background-color: darkmagenta;
+        }
+        .d8:hover{
+            font-size: 100px;
+            background-color: slateblue;
+        }
+        .e8:hover{
+            background-color: goldenrod;
+        }
+        .f8:active{
+            background-color: khaki;
+        }
+        .g8:hover{
+            background-color: orchid;
+        }
+        .h8:hover{
+            background-color:red;
+        }
+       .tool{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+       }
+       .tooltip{
+        visibility: hidden;
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+            
+            text-align: center;
+            border-radius: 5px;
+            position: relative;
+            left:100px;
+            z-index: 1;
+       }
+        .tool:hover .tooltip{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body><div class="main">
+    <div class="a">
+        <div class="a1">&#9814;</div>
+        <div class="a2"> &#9817; </div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+        <div class="a6"></div>
+        <div class="a7">&#9823;</div>
+        <div class="a8">&#9820;</div></div>
+        <div class="b">
+        <div class="b1">&#9816;</div>
+        <div class="b2"> &#9817;</div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+        <div class="b6"></div>
+        <div class="b7">&#9823;</div>
+        <div class="b8">&#9822;</div></div>
+        <div class="c">
+        <div class="c1">&#9815;</div>
+        <div class="c2"> &#9817;</div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div class="c6"></div>
+        <div class="c7">&#9823;</div>
+        <div class="c8">&#9821;</div></div>
+        <div class="d">
+        <div class="d1">&#9813;</div>
+        <div class="d2"> &#9817;</div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+        <div class="d5"></div>
+        <div class="d6"></div>
+        <div class="d7">&#9823;</div>
+        <div class="d8">&#9818;</div></div>
+        <div class="e">
+        <div class="e1">&#9812;</div>
+        <div class="e2"> &#9817;</div>
+        <div class="e3"></div>
+        <div class="e4"></div>
+        <div class="e5"></div>
+        <div class="e6"></div>
+        <div class="e7">&#9823;</div>
+        <div class="e8">&#9819;</div></div>
+        <div class="f">
+        <div class="f1">&#9815;</div>
+        <div class="f2"> &#9817;</div>
+        <div class="f3"></div>
+        <div class="f4"></div>
+        <div class="f5"></div>
+        <div class="f6"></div>
+        <div class="f7">&#9823;</div>
+        <div class="f8">&#9821;</div></div>
+        <div class="g">
+        <div class="g1">&#9816;</div>
+        <div class="g2"> &#9817;</div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="g6"></div>
+        <div class="g7">&#9823;</div>
+        <div class="g8">&#9822;</div></div>
+        <div class="h">
+        <div class="h1">&#9814;</div>
+        <div class="h2"> &#9817;</div>
+        <div class="h3"></div>
+        <div class="h4"></div>
+        <div class="h5"></div>
+        <div class="h6"></div>
+        <div class="h7">&#9823;</div>
+        <div class="h8">&#9820;</div></div>
+   </div>
+   
+        <h1>Tool Tip</h1>
+        <div class="tool">
+            UserName:
+           <input type="text">
+          
+         
+       <div class="tooltip" aria-placeholder="hello"></div>
+        
+            </div>
+  
+   </body>
+   </html>
