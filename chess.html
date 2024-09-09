@@ -183,25 +183,35 @@
         .h8:hover{
             background-color:red;
         }
-       .tool{
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-       }
+       
        .tooltip{
-        visibility: hidden;
+          visibility: hidden;
             width: 300px;
-            height: 50px;
+            height: 20px;
             border: 1px solid black;
-            
-            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align:center;
             border-radius: 5px;
             position: relative;
-            left:100px;
+            left:80px;
             z-index: 1;
        }
         .tool:hover .tooltip{
             visibility: visible;
+            opacity: 1;
+        }
+        .tip2{
+            border: 1px solid black;
+            width: 300px;
+             visibility: hidden; 
+            position: relative;
+            left:80px;
+            border-radius:5px;
+            text-align: center;
+        }
+        .tool2:hover .tip2{
+              visibility: visible; 
+           
         }
     </style>
 </head>
@@ -286,9 +296,14 @@
            <input type="text">
           
          
-       <div class="tooltip" aria-placeholder="hello"></div>
+       <div class="tooltip">Please Enter Valid UserName</div>
         
+            </div><br>
+            <div class="tool2">
+                Mail-Id:
+                <input type="mail">
+                <div class="tip2">Please Enter Mail-Id</div>
             </div>
-  
+           <input type="submit">
    </body>
    </html>
